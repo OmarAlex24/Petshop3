@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -22,20 +23,12 @@ a {
 li {
   list-style: none;
 }
-/* Nav */
-.menu_superior {
-  background-color: #222222;
-}
-.barra_nav {
-  background-color: #f0a83e;
-  z-index: -1;
-}
-/* Main */
 h1,
 h2,
 h3,
-h4 {
+main h4 {
   color: #3c2313;
+  margin: 0;
 }
 h1 {
   font-size: 30px;
@@ -51,15 +44,97 @@ h4 {
 }
 button {
   border: none;
+}
+/* Nav */
+.menu_superior {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+}
+.elementos-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.barra_nav {
   background-color: #f0a83e;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
 }
-.texto_img {
-  position: absolute;
-  text-align: center;
+.barra_nav .logo {
+  height: 40px;
+  width: auto;
+}
+.elementos-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 24px;
+}
+.elementos-nav svg {
+  height: 24px;
+  width: auto;
+}
+.elementos-nav a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Main */
+
+/* Banner */
+.bg-main {
+  background-image: url(/assets/background.png);
+  height: 80vh;
   width: 100%;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+
+  padding-right: 40px;
 }
-.centrar_text {
-  text-align: center;
+.bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.bg-main .titulo {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+
+  font-size: 50px;
+}
+.bg-main .subtitulo {
+  font-size: 30px;
+}
+.bg-main .boton {
+  color: white;
+  background-color: #f0a83e;
+  border-radius: 5%;
+  padding: 20px 40px;
+  font-size: 25px;
+}
+
+/* Productos */
+
+section svg {
+  color: orange;
+  width: 100px;
+  height: 100px;
 }
 .precios {
   color: #f0a83e;
